@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember Brew Café | Where warmth meets coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-zoom { animation: slow-zoom 20s infinite alternate ease-in-out; }
+        @keyframes slow-zoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-[#2C2C2C]">
+
+    <nav class="flex justify-between items-center px-8 py-6 sticky top-0 bg-[#FDFBF7]/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="text-2xl font-bold tracking-tighter uppercase">
+            EMBER <span class="text-[#D97706]">BREW</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 uppercase tracking-widest text-xs font-semibold">
+            <a href="index.html" class="text-[#D97706]">Home</a>
+            <a href="menu.html" class="hover:text-[#D97706] transition">Menu</a>
+            <a href="about.html" class="hover:text-[#D97706] transition">Our Story</a>
+            <a href="contact.html" class="hover:text-[#D97706] transition">Contact</a>
+        </div>
+
+        <a href="order.html" class="bg-[#2C2C2C] text-white px-6 py-2 rounded-full text-sm hover:bg-[#D97706] transition">Order Now</a>
+    </nav>
+
+    <header class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee Pour" class="absolute inset-0 w-full h-full object-cover hero-zoom">
+        
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl mb-4 italic">Where warmth meets coffee.</h1>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90">Experience premium beans and the comfort of community in the heart of South Africa.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="menu.html" class="bg-[#D97706] text-white px-10 py-4 rounded-sm hover:bg-white hover:text-black transition duration-300 font-semibold uppercase tracking-widest text-xs">View Menu</a>
+                <a href="about.html" class="border border-white text-white px-10 py-4 rounded-sm hover:bg-white/10 transition duration-300 font-semibold uppercase tracking-widest text-xs">Our Story</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="mission" class="py-24 px-8 max-w-5xl mx-auto text-center">
+        <span class="text-[#D97706] uppercase tracking-[0.3em] text-xs font-bold">Our Mission</span>
+        <h2 class="text-4xl mt-4 mb-6">A calm moment in a busy world.</h2>
+        <p class="text-gray-500 leading-relaxed text-lg max-w-3xl mx-auto">
+            To create a warm and welcoming space where people connect over quality coffee, fresh food, and calm moments. Whether you're here for your morning fix or a slow afternoon, Ember Brew is your third home.
+        </p>
+    </section>
+
+    <section class="bg-[#2C2C2C] text-white py-20 px-8">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <p class="text-2xl italic mb-4">"The best Flat White in town. The atmosphere is exactly what I need for my morning deep-work sessions."</p>
+                <span class="text-[#D97706] font-semibold">— Sarah M., Cape Town</span>
+            </div>
+            <div>
+                <p class="text-2xl italic mb-4">"Love the local twist on the pastries. That Milk Tart Croissant is a game changer!"</p>
+                <span class="text-[#D97706] font-semibold">— David K., Sandton</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-gray-100 text-center">
+        <div class="mb-6 font-['Playfair_Display'] font-bold text-xl uppercase">EMBER BREW</div>
+        <p class="text-gray-400 text-sm mb-4">© 2026 Ember Brew Café. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 text-xs font-bold uppercase tracking-widest text-gray-500">
+            <a href="https://instagram.com" class="hover:text-[#D97706]">Instagram</a>
+            <a href="https://facebook.com" class="hover:text-[#D97706]">Facebook</a>
+            <a href="https://wa.me/27123456789" class="hover:text-[#D97706]">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

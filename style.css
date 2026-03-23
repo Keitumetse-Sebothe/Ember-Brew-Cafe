@@ -1,0 +1,33 @@
+/* Custom Transitions & Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Subtle Zoom for Hero Image */
+@keyframes slow-zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.animate-slow-zoom {
+    animation: slow-zoom 20s infinite alternate ease-in-out;
+}
+
+/* Amber Glow Accents */
+.accent-amber {
+    color: #D97706;
+}
+
+.bg-warm-cream {
+    background-color: #FDFBF7;
+}
+
+/* Hover effect for menu items */
+.menu-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}

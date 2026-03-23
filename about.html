@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Ember Brew Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-[#2C2C2C]">
+
+    <nav class="flex justify-between items-center px-8 py-6 sticky top-0 bg-[#FDFBF7]/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase">
+            EMBER <span class="text-[#D97706]">BREW</span>
+        </a>
+        <div class="hidden md:flex space-x-8 uppercase tracking-widest text-xs font-semibold">
+            <a href="index.html" class="hover:text-[#D97706] transition">Home</a>
+            <a href="menu.html" class="hover:text-[#D97706] transition">Menu</a>
+            <a href="about.html" class="text-[#D97706]">Our Story</a>
+            <a href="contact.html" class="hover:text-[#D97706] transition">Contact</a>
+        </div>
+        <a href="order.html" class="bg-[#2C2C2C] text-white px-6 py-2 rounded-full text-sm hover:bg-[#D97706] transition">Order Now</a>
+    </nav>
+
+    <main>
+        <section class="grid md:grid-cols-2 min-h-[70vh] items-center">
+            <div class="p-12 md:p-24">
+                <span class="text-[#D97706] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Beginning</span>
+                <h1 class="text-5xl mb-6">Born from a love for the morning chill.</h1>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Ember Brew Café started with a simple idea: that coffee is more than just caffeine—it’s a ritual of warmth. Founded in the heart of South Africa, we wanted to create a space that felt like the "ember" of a fireplace: steady, inviting, and soul-warming.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    We source our beans from small-scale African farmers, ensuring that every cup you drink contributes to a sustainable coffee ecosystem.
+                </p>
+            </div>
+            <div class="h-full min-h-[400px] bg-gray-200">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="Ember Brew Interior" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#2C2C2C] text-white px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl mb-4 italic text-[#D97706]">Our Mission</h2>
+                    <p class="text-xl font-light max-w-2xl mx-auto opacity-80">
+                        To create a warm and welcoming space where people connect over quality coffee, fresh food, and calm moments in a busy world.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center p-6 border border-white/10 rounded-lg hover:border-[#D97706] transition">
+                        <h3 class="text-[#D97706] text-xl mb-2">Quality</h3>
+                        <p class="text-sm text-gray-400">Only the finest beans and freshest local ingredients.</p>
+                    </div>
+                    <div class="text-center p-6 border border-white/10 rounded-lg hover:border-[#D97706] transition">
+                        <h3 class="text-[#D97706] text-xl mb-2">Community</h3>
+                        <p class="text-sm text-gray-400">A space where everyone belongs and connections grow.</p>
+                    </div>
+                    <div class="text-center p-6 border border-white/10 rounded-lg hover:border-[#D97706] transition">
+                        <h3 class="text-[#D97706] text-xl mb-2">Consistency</h3>
+                        <p class="text-sm text-gray-400">The same perfect pour, every single time.</p>
+                    </div>
+                    <div class="text-center p-6 border border-white/10 rounded-lg hover:border-[#D97706] transition">
+                        <h3 class="text-[#D97706] text-xl mb-2">Comfort</h3>
+                        <p class="text-sm text-gray-400">Soft lighting, cozy seats, and a calm atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 text-center">
+            <h2 class="text-3xl mb-8">Come visit us today.</h2>
+            <a href="contact.html" class="inline-block bg-[#D97706] text-white px-10 py-4 rounded-sm hover:bg-black transition duration-300 font-semibold uppercase tracking-widest text-xs">Find Our Location</a>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-gray-100 text-center text-gray-400 text-sm">
+        <p>© 2026 Ember Brew Café • Crafted in South Africa</p>
+    </footer>
+
+</body>
+</html>
